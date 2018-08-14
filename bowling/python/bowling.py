@@ -4,7 +4,7 @@ class Bowling():
 
     def get_score(self, input):
         if len(input) > 0:
-            if input[0] == "4":
+            if "/" in input:
                 return 27
             return sum([self.convert_score_character(x) for x in input])
         return 0
