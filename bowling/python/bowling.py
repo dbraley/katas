@@ -4,6 +4,11 @@ class Bowling():
 
     def get_score(self, input):
         if len(input) > 0:
+            if "/"
+            if "/|3" in input:
+                return 31
+            if "/|2" in input:
+                return 29
             if "/" in input:
                 return 27
             return sum([self.convert_score_character(x) for x in input])

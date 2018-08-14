@@ -57,5 +57,11 @@ class BowlingTest(unittest.TestCase):
     def test_score_9_frames_with_5_spare(self):
         self.assertEqual(27, self.bowling.get_score("5/|11|11|11|11|11|11|11|11"))
 
-    def test_score_9_frames_with_5_spare(self):
-        self.assertEqual(27, self.bowling.get_score("5/|11|11|11|11|11|11|11|11"))
+    def test_score_9_frames_with_5_spare_2(self):
+        self.assertEqual(29, self.bowling.get_score("5/|21|11|11|11|11|11|11|11"))
+
+    def test_score_9_frames_with_5_spare_3(self):
+        self.assertEqual(31, self.bowling.get_score("5/|31|11|11|11|11|11|11|11"))
+
+    def test_score_9_frames_with_5_spare_3(self):
+        self.assertEqual(40, self.bowling.get_score("5/|31|11|11|1/|11|11|11|11"))
