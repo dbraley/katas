@@ -47,3 +47,9 @@ class BowlingTest(unittest.TestCase):
 
     def test_score_9_frames_complete(self):
         self.assertEqual(18, self.bowling.get_score("11|11|11|11|11|11|11|11|11"))
+
+    def test_score_9_frames_with_spare(self):
+        self.assertEqual(27, self.bowling.get_score("1/|11|11|11|11|11|11|11|11"))
+
+    def test_score_9_frames_with_4_spare(self):
+        self.assertEqual(27, self.bowling.get_score("4/|11|11|11|11|11|11|11|11"))
