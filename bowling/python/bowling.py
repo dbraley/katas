@@ -3,19 +3,11 @@ class Bowling():
         self.score = 0
 
     def get_score(self, input):
-        if len(input) == 1:
-            return self.convert_score_character(input)
-        if len(input) == 2:
-            return self.convert_score_character(input[0]) + self.convert_score_character(input[1])
-        if input == "62|3":
-            return 11
-        if input == "62|5":
-            return 13
-        if input == "62|52":
-            return 15
+        if len(input) > 0:
+            return sum([self.convert_score_character(x) for x in input])
         return 0
 
     def convert_score_character(self, character):
-        if character == "-":
+        if character == "-" or character == "|":
             return 0
         return int(character)
