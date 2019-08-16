@@ -1,0 +1,7 @@
+https://github.com/ryanb/ruby-warrior
+
+gem install rubywarrior
+then just use command "rubywarrior"
+
+Tips:
+- Make sure to read the hint/README after completing each level as the documentation does not explain the new enemies and player abilities unlocked after each level
